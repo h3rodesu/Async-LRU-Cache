@@ -400,3 +400,29 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 .vs/  x64/  Debug/  Release/  *.vcxproj  *.vcxproj.filters  *.gitattributes 
+# Build directories
+out/
+build/
+
+# Visual Studio
+.vs/
+
+# Compiled files
+*.exe
+*.dll
+*.obj
+*.pdb
+*.lib
+*.exp
+*.ilk
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+*.ninja
+.ninja_log
+.ninja_deps
+
+# Logs
+*.log

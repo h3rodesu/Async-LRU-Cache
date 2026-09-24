@@ -17,7 +17,7 @@
 		size_t razmer;
 		pqxx::connection& conn;
 		std::mutex mtx;
-		std::thread dbworker;//Отдельный ЧЕРТЁЖ потокф для записи в БД
+		std::thread dbworker;
 		std::queue < std::pair<K, V>>que;//Поменять на стринг
 		std::condition_variable cv;
 		std::mutex dbMtx;//Отдельный мьютекс для потока записи в бд

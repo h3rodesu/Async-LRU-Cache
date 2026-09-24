@@ -47,6 +47,7 @@ const V& Cache<K, V>::get(const K& key) {//Возвращаем значение
 		else {
 			std::cout << "По ключу " << key << " не найдено результатов" << std::endl;
 				throw std::runtime_error("Key not found");
+
 		}
 	}
 }

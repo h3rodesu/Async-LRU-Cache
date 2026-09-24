@@ -15,8 +15,6 @@ set(HEADERS
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
-
-# ---- Зависимости ----
 find_package(libpqxx CONFIG REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE libpqxx::pqxx)
 
@@ -26,3 +24,4 @@ target_link_libraries(${PROJECT_NAME} PRIVATE Threads::Threads)
 if(WIN32)
     target_compile_options(${PROJECT_NAME} PRIVATE /utf-8)
 endif()
+
